@@ -7,6 +7,14 @@ const Navbar = () => {
     setIsopen((prev) => !prev);
   }
 
+  if(isOpen){ const scrollTop = window.scrollY || document.documentElement.scrollTop;
+const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+  window.onscroll = function () {
+  window.scrollTo(scrollLeft, scrollTop);
+};
+}else{
+  window.onscroll = null;
+}
   useEffect(() => {
     const tl = gsap.timeline();
     if (isOpen) {
@@ -110,7 +118,7 @@ const Navbar = () => {
       {
         <div
   id="navbar2Container"
-  className="bg-[#040404] fixed top-0 left-0 z-[10] sm:flex h-0 overflow-hidden w-full"
+  className="bg-[#040404] fixed top-0 left-0 z-[90] sm:flex h-0 overflow-hidden w-full"
 >
   <div className="sm:w-[50%] w-full sm:h-[100%] h-[50%] gap-3 capitalize font-[font1] flex flex-col font-extrabold items-center md:items-end sm:justify-center justify-end">
     <div className="hover-group w-fit sm:h-[100%] h-fit gap-3 capitalize font-[font1] flex flex-col font-bold items-center md:items-end sm:justify-center justify-end">

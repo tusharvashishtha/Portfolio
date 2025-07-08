@@ -13,6 +13,7 @@
     "@gsap/react": "^2.1.2",
     "@splinetool/react-spline": "^4.0.0",
     "@studio-freight/lenis": "^1.0.42",
+    "@tabler/icons-react": "^3.34.0",
     "@tailwindcss/vite": "^4.1.11",
     "clsx": "^2.1.1",
     "gsap": "^3.13.0",
