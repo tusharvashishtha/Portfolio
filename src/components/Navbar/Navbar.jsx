@@ -97,7 +97,7 @@ const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
 
   return (
     <div className="w-full overflow-hidden">
-      <div className="w-full h-[10vh] fixed z-[99] text-zinc-400 flex justify-between items-center transparent px-6  sm:px-15 sm:pt-5">
+      <div className="w-full h-[10vh] fixed z-[999] text-zinc-400 flex justify-between items-center transparent px-6  sm:px-15 sm:pt-5">
         <div className="h-[100%] w-[5%] flex  justify-center items-center">
           <h1 className="text-5xl select-none font-bold">T</h1>
         </div>
