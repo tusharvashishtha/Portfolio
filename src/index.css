@@ -22,3 +22,12 @@
     src: url('../public/Fonts/inter-500.woff2');
 }
 
+@font-face {
+    font-family: font6;
+    src: url('../public/Fonts/fero-anderson-demo.regular.ttf');
+}
+
+@font-face {
+    font-family: font7;
+    src: url('../public/Fonts/FRANKGO.ttf');
+}
