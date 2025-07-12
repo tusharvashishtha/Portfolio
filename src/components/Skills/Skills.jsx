@@ -20,7 +20,7 @@ const Skills = () => {
   return (
     <div
       ref={sectionRef}
-      className="relative min-h-screen bg-[#040404] text-white flex flex-col justify-center items-center px-6 py-20 overflow-hidden"
+      className="relative min-h-screen bg-[#040404] text-white flex flex-col justify-center items-center px-6 py-20 "
     >
       <h2 className="text-4xl md:text-5xl font-bold mb-12 tracking-tight text-center z-10 relative">
         My <span className="text-zinc-400">Skills</span>

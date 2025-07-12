@@ -6,15 +6,17 @@ import About from './components/AboutPage/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import useLenis from './Hooks/useLenis';
 
 
 function App() {
+  useLenis();
   return (
     <>
     <Navbar />
-    {/* <Home />
-    <About /> */}
-    {/* <Skills /> */}
+    <Home />
+    <About />
+    <Skills />
     <Projects />
     <Contact />
     </>

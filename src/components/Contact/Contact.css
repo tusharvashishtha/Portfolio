@@ -1,0 +1,37 @@
+.slideshow-target {
+  transition: color 0.3s ease;
+}
+
+.slideshow-target.slideshow {
+  color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: slideImages 5s infinite linear;
+}
+
+@keyframes slideImages {
+  0% {
+    background-image: url('./art.jpg');
+  }
+  10% {
+    background-image: url('./art1.jpg');
+  }
+  20% {
+    background-image: url('./art2.jpg');
+  }
+  40% {
+    background-image: url('./art3.jpg');
+  }
+  60% {
+    background-image: url('./art4.jpg');
+  }
+  80% {
+    background-image: url('./art5.jpg');
+  }
+  100% {
+    background-image: url('./art1.jpg');
+  }
+}
