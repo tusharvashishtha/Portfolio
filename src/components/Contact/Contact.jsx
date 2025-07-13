@@ -1,6 +1,5 @@
 import './Contact.css'
 import React, { useRef, useEffect } from 'react'
-
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
@@ -52,18 +51,7 @@ const Contact = () => {
 
   return (
     <div className="flex h-fit w-full flex-col pt-20 items-center overflow-hidden bg-black">
-      <div className=" h-screen absolute w-full">
-                        <Dither
-                waveColor={[0.1, 0.1, 0.5]}
-                disableAnimation={false}
-                enableMouseInteraction={true}
-                mouseRadius={0.3}
-                colorNum={4}
-                waveAmplitude={0.3}
-                waveFrequency={3}
-                waveSpeed={0.05}
-              />
-                  </div>
+   
       <div className="h-fit w-full flex items-center justify-center font-bold m-10">
         <h1
           ref={h1Ref}

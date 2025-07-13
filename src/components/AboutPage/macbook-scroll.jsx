@@ -145,7 +145,7 @@ export const Lid = ({
         <div className="absolute overflow-hidden inset-0 rounded-lg bg-[#272729]" />
         
         <img
-          src="https://sdmntprwestus3.oaiusercontent.com/files/00000000-ad9c-61fd-bd8f-1ca211b641e7/raw?se=2025-07-12T19%3A30%3A20Z&sp=r&sv=2024-08-04&sr=b&scid=5a5acea4-31e4-55bb-92f2-f7f506c4afe4&skoid=c953efd6-2ae8-41b4-a6d6-34b1475ac07c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-12T17%3A21%3A46Z&ske=2025-07-13T17%3A21%3A46Z&sks=b&skv=2024-08-04&sig=Z0ND1j%2BGukOTUoLOw0qdEg2J42Wj/eL/ErwrL26YbzY%3D"
+          src="./aboutMe.png"
           alt="img"
           className="absolute inset-0 h-full w-full rounded-lg object-cover object-left-top" />
       </motion.div>
@@ -584,7 +584,7 @@ const AceternityLogo = () => {
       height="65"
       viewBox="0 0 66 65"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns=""
       className="h-3 w-3 text-white">
       <path
         d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
