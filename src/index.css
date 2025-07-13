@@ -31,3 +31,7 @@
     font-family: font7;
     src: url('../public/Fonts/FRANKGO.ttf');
 }
+
+body::-webkit-scrollbar{
+    display: none;
+}

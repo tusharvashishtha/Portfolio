@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import ImageTrail from "./ImageTrail";
 
+
+
 const skills = [
   { name: "Java", img: "java3d.png" },
   { name: "JavaScript", img: "js3d.png" },
@@ -20,30 +22,32 @@ const Skills = () => {
   return (
     <div
       ref={sectionRef}
-      className="relative min-h-screen bg-[#040404] text-white flex flex-col justify-center items-center px-6 py-20 "
+      className="relative min-h-screen bg-[#040404] text-zinc-400 flex flex-col justify-center items-center px-6 py-20 "
     >
-      <h2 className="text-4xl md:text-5xl font-bold mb-12 tracking-tight text-center z-10 relative">
-        My <span className="text-zinc-400">Skills</span>
+      <h2 className="text-4xl underline md:text-7xl font-bold mb-12 tracking-tight text-center z-10 relative">
+       Skills
       </h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-5xl w-full z-10 relative">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 max-w-5xl w-full z-10 relative">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="bg-gradient-to-br from-[#040404] to-zinc-800 border border-[#333] rounded-2xl h-24 flex flex-col items-center justify-center text-center text-base leading-tight font-medium shadow-lg"
+            className=" rounded-2xl h-24 flex flex-col items-center justify-center text-center text-base leading-tight font-medium shadow-lg"
           >
             <img
               src={skill.img}
               alt={skill.name}
-              className="w-8 h-8 mb-1 object-contain"
+              className="w-10 h-10 mb-1 object-contain"
             />
             <span className="block px-2 text-sm sm:text-base">{skill.name}</span>
           </div>
         ))}
       </div>
+     
+
 
      <div className=" h-screen absolute w-full">
-         <ImageTrail
+             <ImageTrail
         items={[
           "html3d.png",
           "css3d.png",

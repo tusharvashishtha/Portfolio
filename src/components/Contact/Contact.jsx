@@ -1,5 +1,6 @@
 import './Contact.css'
 import React, { useRef, useEffect } from 'react'
+
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
@@ -33,8 +34,8 @@ const Contact = () => {
         keyframes: {
           '0%': { color: '#27272a' },
           '25%': { color: '#D1C7BD' },
-          '50%': { color: '#8B0002' },
-          '75%': { color: '#548FAB' },
+          '50%': { color: '#27272a' },
+          '75%': { color: '#27272a' },
           '100%': { color: '#9F9FA9' }
         },
         ease: 'none',
@@ -51,10 +52,22 @@ const Contact = () => {
 
   return (
     <div className="flex h-fit w-full flex-col pt-20 items-center overflow-hidden bg-black">
+      <div className=" h-screen absolute w-full">
+                        <Dither
+                waveColor={[0.1, 0.1, 0.5]}
+                disableAnimation={false}
+                enableMouseInteraction={true}
+                mouseRadius={0.3}
+                colorNum={4}
+                waveAmplitude={0.3}
+                waveFrequency={3}
+                waveSpeed={0.05}
+              />
+                  </div>
       <div className="h-fit w-full flex items-center justify-center font-bold m-10">
         <h1
           ref={h1Ref}
-          className="relative text-8xl font-[font2] uppercase text-zinc-400 m-5 sm:m-10 cursor-pointer"
+          className="relative text-6xl md:text-8xl font-[font2] uppercase text-zinc-400 m-5 sm:m-10 cursor-pointer"
           onMouseEnter={showUnderline}
           onMouseLeave={hideUnderline}
         >
@@ -99,13 +112,13 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="h-fit w-full flex items-center pl-8 justify-start">
+      <div className="h-fit w-full flex py-10 items-center pl-8 justify-start">
         <h1
           ref={textRef}
-          className="text-[18rem] text-zinc-600 font-[font7] slideshow-target"
+          className="text-4xl md:text-[18rem] text-zinc-600 font-[font7] slideshow-target"
         >
           TUSHAR
-          <span className="text-[5rem] fonnt-light text-zinc-400 font-[font6] italic">
+          <span className="text-2xl md:text-[5rem] sm:p-0 fonnt-light text-zinc-400 font-[font6] italic">
             VASHISHTHA
           </span>
         </h1>

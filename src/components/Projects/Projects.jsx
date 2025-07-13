@@ -3,6 +3,7 @@ import FlowingMenu from "./FlowingMenu";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
@@ -63,10 +64,10 @@ const Projects = () => {
   return (
     <div className="h-screen overflow-hidden w-full bg-[#040404]">
 
-      <div className="h-[20%] mb-3 w-full p-5 flex justify-start border-b-1 border-zinc-400 items-center">
+      <div className="h-[20%] mb-3 w-full p-5 flex justify-center border-b-1 border-zinc-400 items-center">
         <h1
-          ref={headingRef}
-          className="relative text-8xl p-2 font-[font2] font-bold text-zinc-400 cursor-pointer"
+          // ref={headingRef}
+          className="relative text-6xl md:text-8xl p-2 font-[font2] font-bold text-zinc-400 cursor-pointer"
           onMouseEnter={showUnderline}
           onMouseLeave={hideUnderline}
         >
@@ -77,11 +78,13 @@ const Projects = () => {
           />
         </h1>
       </div>
+      
 
 
       <div className="h-[80%] w-full">
         <FlowingMenu items={demoItems} />
       </div>
+     
     </div>
   );
 };
